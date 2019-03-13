@@ -46,7 +46,8 @@ class App extends Component {
             <MuiThemeProvider>
                 <div className="centerize">
                     <Paper zDepth={1} className="content">
-                        <h2>Sentiment Analyser</h2>
+                        <h2>Microservice Java/Python App</h2>
+                        This application will dispatch the request to python webservice to perform the reverse and display result.
                         <TextField ref={ref => this.textField = ref} onKeyUp={this.onEnterPress.bind(this)}
                                    hintText="Type your sentence."/>
                         <RaisedButton  label="Send" style={style} onClick={this.analyzeSentence.bind(this)}/>

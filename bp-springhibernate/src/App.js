@@ -50,7 +50,8 @@ class App extends Component {
             <MuiThemeProvider>
                 <div className="centerize">
                     <Paper zDepth={1} className="content">
-                        <h2>Add new entry</h2>
+                        <h2>Spring Hibernate Application</h2>
+                        This application will write new record in to the database and display all records right after added
                         <TextField name="username" onChange={this.handleChange}
                         hintText="Type username to add."/>
                         <TextField name="hobby" onChange={this.handleChange}
