@@ -16,9 +16,9 @@ class App extends Component {
         this.state = {
             username: '',
             hobby: '',
-	    all_entries: ''
+	          all_entries: ''
         };
-	this.handleChange = this.handleChange.bind(this);
+	      this.handleChange = this.handleChange.bind(this);
     };
 
     analyzeSentence() {
@@ -33,8 +33,6 @@ class App extends Component {
             .then(data => this.setState(data));
     }
   handleChange (event) {
-    // check it out: we get the evt.target.name (which will be either "email" or "password")
-    // and use it to target the key on our `state` object with the same name, using bracket syntax
     this.setState({ [event.target.name]: event.target.value });
   }
     onEnterPress = e => {
@@ -53,10 +51,13 @@ class App extends Component {
                 <div className="centerize">
                     <Paper zDepth={1} className="content">
                         <h2>Add new entry</h2>
-        <input type="text" name="username" onChange={this.handleChange} />
-        
-        <input type="text" name="hobby" onChange={this.handleChange} />
-                        <RaisedButton  label="Send" style={style} onClick={this.analyzeSentence.bind(this)}/>
+                        <TextField name="username" onChange={this.handleChange}
+                        hintText="Type username to add."/>
+                        <TextField name="hobby" onChange={this.handleChange}
+                        hintText="Type his/her hobby."/>
+
+                        <RaisedButton  label="Add Entry" style={style} onClick={this.analyzeSentence.bind(this)}/>
+                        <br></br>
                         {polarityComponent}
                     </Paper>
                 </div>

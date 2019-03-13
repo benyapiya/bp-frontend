@@ -8,14 +8,12 @@ class Polarity extends Component {
     };
 
     render() {
-        const green = Math.round((this.props.polarity + 1) * 128);
-        const red = 255 - green;
         const textColor = {
-            backgroundColor: 'rgb(' + red + ', ' + green + ', 0)',
+            backgroundColor: '#dddddd',
             padding: '15px'
         };
 
-        return <div style={textColor}>All DB Records: {this.props.polarity} </div>
+        return <div style={textColor}><br></br>Here is all data in the database: <br></br>{this.props.polarity} </div>
     }
 }
 
