@@ -20,7 +20,7 @@ class App extends Component {
     };
 
     analyzeSentence() {
-        fetch('http://localhost:8080/sentiment', {
+        fetch('http://3.17.220.167:8080/sentiment', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -47,11 +47,12 @@ class App extends Component {
                 <div className="centerize">
                     <Paper zDepth={1} className="content">
                         <h2>Microservice Java/Python App</h2>
-                        This application will dispatch the request to python webservice to perform the reverse and display result.
+                        This application will dispatch the request to python webservice to perform the reverse and display result.<div></div>
                         <TextField ref={ref => this.textField = ref} onKeyUp={this.onEnterPress.bind(this)}
                                    hintText="Type your sentence."/>
                         <RaisedButton  label="Send" style={style} onClick={this.analyzeSentence.bind(this)}/>
                         <br></br>
+                        <div></div>
                         {polarityComponent}
                     </Paper>
                 </div>

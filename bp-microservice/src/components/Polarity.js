@@ -14,7 +14,7 @@ class Polarity extends Component {
             padding: '15px'
         };
 
-        return <div style={textColor}><br></br>This is reversed sentence: {this.props.polarity} </div>
+        return <div style={textColor}>This is reversed sentence: {this.props.polarity} </div>
     }
 }
 

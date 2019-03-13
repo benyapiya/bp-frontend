@@ -52,6 +52,7 @@ class App extends Component {
                     <Paper zDepth={1} className="content">
                         <h2>Spring Hibernate Application</h2>
                         This application will write new record in to the database and display all records right after added
+                        <div></div>
                         <TextField name="username" onChange={this.handleChange}
                         hintText="Type username to add."/>
                         <TextField name="hobby" onChange={this.handleChange}
@@ -59,6 +60,7 @@ class App extends Component {
 
                         <RaisedButton  label="Add Entry" style={style} onClick={this.analyzeSentence.bind(this)}/>
                         <br></br>
+                        <div></div>
                         {polarityComponent}
                     </Paper>
                 </div>
