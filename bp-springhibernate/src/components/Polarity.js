@@ -13,7 +13,7 @@ class Polarity extends Component {
             padding: '15px'
         };
 
-        return <div style={textColor}><br></br>Here is all data in the database: <br></br>{this.props.polarity} </div>
+        return <div style={textColor}>Here is all data in the database: <br></br>{this.props.polarity} </div>
     }
 }
 

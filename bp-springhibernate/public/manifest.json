@@ -1,6 +1,6 @@
 {
-  "short_name": "Sentiment Analysis",
-  "name": "Analyse Sentiment of sentences",
+  "short_name": "Spring Hibernate",
+  "name": "Write and retrieve data to/from database",
   "icons": [
     {
       "src": "sa-icon.ico",

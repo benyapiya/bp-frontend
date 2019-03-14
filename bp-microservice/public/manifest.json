@@ -1,6 +1,6 @@
 {
-  "short_name": "Sentiment Analysis",
-  "name": "Analyse Sentiment of sentences",
+  "short_name": "Microservice",
+  "name": "Reverse sentence",
   "icons": [
     {
       "src": "sa-icon.ico",
